@@ -5,137 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Buen Pastor - Sopa de Letras</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>El Buen Pastor</h1>
+            <p class="subtitle">Encuentra las palabras escondidas</p>
+        </header>
 
-    <h1>El Buen Pastor</h1>
-    <p>Busca las siguientes palabras y completa los enunciados:</p>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <p class="progress-text" id="progressText">0 / 6 palabras encontradas</p>
 
-    <div class="word-search">
-        <button onclick="selectLetter(this)">O</button>
-        <button onclick="selectLetter(this)">R</button>
-        <button onclick="selectLetter(this)">J</button>
-        <button onclick="selectLetter(this)">B</button>
-        <button onclick="selectLetter(this)">L</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">P</button>
-        <button onclick="selectLetter(this)">C</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">F</button>
-        <button onclick="selectLetter(this)">Y</button>
-        <button onclick="selectLetter(this)">X</button>
-        <button onclick="selectLetter(this)">B</button>
-        <button onclick="selectLetter(this)">U</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">N</button>
-        <button onclick="selectLetter(this)">X</button>
-        <button onclick="selectLetter(this)">M</button>
-        <button onclick="selectLetter(this)">Y</button>
-        <button onclick="selectLetter(this)">Z</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">O</button>
-        <button onclick="selectLetter(this)">J</button>
-        <button onclick="selectLetter(this)">H</button>
-        <button onclick="selectLetter(this)">N</button>
-        <button onclick="selectLetter(this)">T</button>
-        <button onclick="selectLetter(this)">Y</button>
-        <button onclick="selectLetter(this)">H</button>
-        <button onclick="selectLetter(this)">P</button>
-        <button onclick="selectLetter(this)">N</button>
-        <button onclick="selectLetter(this)">O</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">Y</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">Z</button>
-        <button onclick="selectLetter(this)">C</button>
-        <button onclick="selectLetter(this)">G</button>
-        <button onclick="selectLetter(this)">P</button>
-        <button onclick="selectLetter(this)">R</button>
-        <button onclick="selectLetter(this)">O</button>
-        <button onclick="selectLetter(this)">H</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">B</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">L</button>
-        <button onclick="selectLetter(this)">L</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">M</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">P</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">S</button>
-        <button onclick="selectLetter(this)">T</button>
-        <button onclick="selectLetter(this)">O</button>
-        <button onclick="selectLetter(this)">R</button>
-        <button onclick="selectLetter(this)">X</button>
-        <button onclick="selectLetter(this)">K</button>
-        <button onclick="selectLetter(this)">R</button>
-        <button onclick="selectLetter(this)">D</button>
-        <button onclick="selectLetter(this)">H</button>
-        <button onclick="selectLetter(this)">P</button>
-        <button onclick="selectLetter(this)">N</button>
-        <button onclick="selectLetter(this)">L</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">X</button>
-        <button onclick="selectLetter(this)">M</button>
-        <button onclick="selectLetter(this)">S</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">G</button>
-        <button onclick="selectLetter(this)">U</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">N</button>
-        <button onclick="selectLetter(this)">D</button>
-        <button onclick="selectLetter(this)">S</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">K</button>
-        <button onclick="selectLetter(this)">L</button>
-        <button onclick="selectLetter(this)">A</button>
-        <button onclick="selectLetter(this)">C</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">Y</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">Z</button>
-        <button onclick="selectLetter(this)">U</button>
-        <button onclick="selectLetter(this)">S</button>
-        <button onclick="selectLetter(this)">M</button>
-        <button onclick="selectLetter(this)">F</button>
-        <button onclick="selectLetter(this)">Z</button>
-        <button onclick="selectLetter(this)">E</button>
-        <button onclick="selectLetter(this)">V</button>
-        <button onclick="selectLetter(this)">Z</button>
-        <button onclick="selectLetter(this)">V</button>
-        <button onclick="selectLetter(this)">I</button>
-        <button onclick="selectLetter(this)">U</button>
-        <button onclick="selectLetter(this)">E</button>
+        <div class="grid-wrapper">
+            <div class="word-grid" id="wordGrid"></div>
+        </div>
+
+        <div class="words-panel">
+            <h2>Palabras a encontrar:</h2>
+            <div class="words-list" id="wordsList">
+                <span class="word-chip" data-word="BUEN">BUEN</span>
+                <span class="word-chip" data-word="LLAMA">LLAMA</span>
+                <span class="word-chip" data-word="PASTOR">PASTOR</span>
+                <span class="word-chip" data-word="OYEN">OYEN</span>
+                <span class="word-chip" data-word="SIGUEN">SIGUEN</span>
+                <span class="word-chip" data-word="VIDA">VIDA</span>
+            </div>
+        </div>
+
+        <div class="sentences-panel">
+            <h2>Completa las frases:</h2>
+            <form id="sentencesForm">
+                <div class="sentence">
+                    <span>1. Jesús se llama a sí mismo el</span>
+                    <input type="text" id="sentence1" placeholder="___" autocomplete="off">
+                    <input type="text" id="sentence2" placeholder="___" autocomplete="off">
+                </div>
+                <div class="sentence">
+                    <span>2. Él conoce a cada una de sus ovejas y las</span>
+                    <input type="text" id="sentence3" placeholder="___" autocomplete="off">
+                    <span>por su nombre.</span>
+                </div>
+                <div class="sentence">
+                    <span>3. Las ovejas</span>
+                    <input type="text" id="sentence4" placeholder="___" autocomplete="off">
+                    <span>la voz del Buen Pastor y lo</span>
+                    <input type="text" id="sentence5" placeholder="___" autocomplete="off">
+                </div>
+                <div class="sentence">
+                    <span>4. El Buen Pastor da la</span>
+                    <input type="text" id="sentence6" placeholder="___" autocomplete="off">
+                    <span>por sus ovejas.</span>
+                </div>
+                <button type="button" class="btn-verify" onclick="validateSentences()">Verificar</button>
+            </form>
+        </div>
+
+        <div class="celebration" id="celebration">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="celebration-content">
+                <span class="celebration-icon">🎉</span>
+                <h2>¡Felicidades!</h2>
+                <p>¡Encontraste todas las palabras!</p>
+                <button class="btn-play-again" onclick="resetGame()">Jugar de nuevo</button>
+            </div>
+        </div>
     </div>
 
-
-
-    <div class="words-to-find">
-        <p>Palabras a encontrar: <strong>BUEN, LLAMA, PASTOR, OYEN, SIGUEN, VIDA</strong></p>
-    </div>
-
-    <div class="complete-sentences">
-        <form id="sentencesForm">
-            <p>1. Jesús se llama a sí mismo el <input type="text" id="sentence1"> <input type="text" id="sentence2"></p>
-            <p>2. Él conoce a cada una de sus ovejas y las <input type="text" id="sentence3"> por su nombre.</p>
-            <p>3. Las ovejas <input type="text" id="sentence4"> la voz del Buen Pastor y lo <input type="text"
-                    id="sentence5">.</p>
-            <p>4. El Buen Pastor da la <input type="text" id="sentence6"> por sus ovejas.</p>
-
-            <div class="container"><button type="button" onclick="validateSentences()">Verificar</button></div>
-        </form>
-    </div>
+    <!-- Derechos de autor -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p class="text-center" style="color: white;">&copy; Desarrollado por Carlos Adrian Noh Caamal.</p>
+        </div>
+    </footer>
 
     <script src="scripts.js"></script>
-
 </body>
 
 </html>
